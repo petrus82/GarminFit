@@ -43,5 +43,5 @@ build() {
 package() {
   cd "${srcdir}/fit-cpp-sdk"
   DESTDIR="${pkgdir}" cmake --install build
-  install -Dm644 "${srcdir}/${_project}/FitCSVTool.jar" "${pkgdir}/usr/lib/${_project}/FitCSVTool.jar"
+  install -Dm644 "${srcdir}/FitCSVTool.jar" "${pkgdir}/usr/lib/${_project}/FitCSVTool.jar"
 }
