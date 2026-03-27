@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "configurePresets": [
+        {
+            "name": "Release",
+            "cacheVariables": {
+                "CMAKE_INSTALL_PREFIX": "$ENV{HOME}/Daten/Entwicklung/GarminFit/install"
+            }
+        }
+    ]
+}
