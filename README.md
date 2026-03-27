@@ -14,3 +14,4 @@ Create a CMakeLists.txt which contains
         Garmin::GarminFit
     )
 ```
+Now you are ready to use the fit.hpp inside your cpp project.
