@@ -10,9 +10,11 @@ license=('FIT Protocol License')
 makedepends=('git' 'cmake' 'ninja' 'llvm')
 source=("git+${url}.git#branch=main"
 "https://github.com/garmin/fit-sdk-tools/raw/refs/heads/main/FitCSVTool/FitCSVTool.jar"
+"https://raw.githubusercontent.com/petrus82/GarminFit/refs/heads/master/CMakeLists.txt"
 )
 sha256sums=('SKIP'
     '2aa5c2871dfd6517f231b6d43f69871793ecd32c0a4e0f46d63dff249da35eb7'
+    'SKIP'
 )
 
 pkgver() {
