@@ -11,9 +11,11 @@ makedepends=('git' 'cmake' 'ninja' 'llvm')
 source=("git+${url}.git#branch=main"
 "https://github.com/garmin/fit-sdk-tools/raw/refs/heads/main/FitCSVTool/FitCSVTool.jar"
 "https://raw.githubusercontent.com/petrus82/GarminFit/refs/heads/master/CMakeLists.txt"
+"https://raw.githubusercontent.com/petrus82/GarminFit/refs/heads/master/version.txt"
 )
 sha256sums=('SKIP'
     '2aa5c2871dfd6517f231b6d43f69871793ecd32c0a4e0f46d63dff249da35eb7'
+    'SKIP'
     'SKIP'
 )
 
@@ -24,7 +26,7 @@ pkgver() {
 
 build() {
   cd "${srcdir}/fit-cpp-sdk"
-  cmake -S . -B build \
+  cmake -S .. -B build \
     -G Ninja \
     -DCMAKE_CXX_COMPILER=/usr/bin/clang++ \
     -DCMAKE_AR=/usr/bin/llvm-ar \
