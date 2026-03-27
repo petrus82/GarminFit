@@ -8,7 +8,8 @@ Download the [PKGBUILD](https://raw.githubusercontent.com/petrus82/GarminFit/ref
 ## Howto
 
 Create a CMakeLists.txt which contains 
-``` find_package(GarminFit Required)
+``` 
+    find_package(GarminFit Required)
     target_link_libraries(your_project_name PRIVATE
         Garmin::GarminFit
     )
