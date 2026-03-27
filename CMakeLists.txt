@@ -49,7 +49,7 @@ include (GNUInstallDirs)
 
 install(
     TARGETS ${PROJECT_NAME}
-    EXPORT GarminFit
+    EXPORT GarminFitConfig
     ARCHIVE DESTINATION ${CMAKE_INSTALL_LIBDIR}
     LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
     RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
@@ -57,6 +57,6 @@ install(
 )
 
 install(
-    EXPORT GarminFit DESTINATION lib/cmake/${PROJECT_NAME}
+    EXPORT GarminFitConfig DESTINATION lib/cmake/${PROJECT_NAME}
     NAMESPACE Garmin::
 )
