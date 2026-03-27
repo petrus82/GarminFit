@@ -32,7 +32,7 @@ message("Garmin Dir: ${GarminSdk_SOURCE_DIR}")
 file(GLOB GarminSources "${GarminSdk_SOURCE_DIR}/cpp/*.cpp")
 file(GLOB HEADER_FILES "${GarminSdk_SOURCE_DIR}/cpp/*.hpp")
 
-add_library(${PROJECT_NAME} 
+add_library(${PROJECT_NAME} SHARED
     ${GarminSources}
 )
 
